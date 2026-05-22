@@ -1,34 +1,164 @@
-{\rtf1\ansi\ansicpg932\cocoartf2638
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset128 HiraginoSans-W3;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="ja">\
-<head>\
-<meta charset="UTF-8">\
-<title>Portfolio</title>\
-</head>\
-\
-<body>\
-\
-<h1>
-\f1 \'8e\'84\'82\'cc\'8d\'ec\'95\'69
-\f0 </h1>\
-\
-<ul>\
-  <li><a href="./cafe.html">
-\f1 \'83\'4a\'83\'74\'83\'46\'83\'54\'83\'43\'83\'67
-\f0 </a></li>\
-  <li><a href="./todo.html">Todo
-\f1 \'83\'41\'83\'76\'83\'8a
-\f0 </a></li>\
-  <li><a href="./lp.html">LP
-\f1 \'83\'54\'83\'43\'83\'67
-\f0 </a></li>\
-</ul>\
-\
-</body>\
-</html>}
+<title>Portfolio</title>
+
+<style>
+
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:#f5f5f5;
+  color:#333;
+}
+
+header{
+  background:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+header h1{
+  font-size:48px;
+  margin-bottom:10px;
+}
+
+header p{
+  font-size:18px;
+  color:#666;
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+h2{
+  margin-bottom:20px;
+}
+
+.works{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:20px;
+}
+
+.card h3{
+  margin-top:0;
+}
+
+.button{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:black;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+
+  <p>
+    Web制作を学習中。<br>
+    HTML/CSSを使ったサイト制作をしています。
+  </p>
+</header>
+
+<div class="container">
+
+  <h2>Works</h2>
+
+  <div class="works">
+
+    <div class="card">
+      <img src="https://picsum.photos/500/300">
+
+      <div class="card-content">
+        <h3>カフェサイト</h3>
+
+        <p>
+          HTML/CSSで作成したカフェサイト
+        </p>
+
+        <a class="button" href="./cafe.html">
+          View
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/500/301">
+
+      <div class="card-content">
+        <h3>Todoアプリ</h3>
+
+        <p>
+          JavaScriptで作成したTodoアプリ
+        </p>
+
+        <a class="button" href="./todo.html">
+          View
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/500/302">
+
+      <div class="card-content">
+        <h3>LPサイト</h3>
+
+        <p>
+          レスポンシブ対応LP
+        </p>
+
+        <a class="button" href="./lp.html">
+          View
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Portfolio
+</footer>
+
+</body>
+</html>
